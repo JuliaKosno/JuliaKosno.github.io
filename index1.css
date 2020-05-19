@@ -1,0 +1,84 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+body{
+	background: gray;
+	color:white;
+	margin-right: 200px;
+	margin-left: 200px;
+	font-family: Quicksand;
+	}
+#title{
+	margin-top:20px;
+	padding:30px;
+	display: block;
+	font-family:'Bradley Hand ITC';
+	font-size:50px;
+	color:#FF3366;
+	text-align: center;
+}
+
+#navbar ul{
+	display: block;
+	margin-bottom:  40px;
+	margin-top:  40px;
+    list-style-type: none;
+    text-align: center;
+}
+
+#navbar li{
+display: inline;
+white-space: nowrap;
+padding-left: 50px;
+padding-top: 10px;
+padding-bottom: 10px;
+font-size: 20px;
+
+} 
+
+#navbar a:link, a:visited{
+	color:white;
+	text-decoration: none;
+}
+
+#navbar a:hover{
+	color:pink;
+}
+
+header{
+width:50%;
+padding:10px;
+font-size: 20px;
+float: left;
+}
+
+#start{
+float:right;
+width:550px;
+padding:10px;
+font-size: 20px;
+}
+h2{
+	font-size: 20px;
+}
+h3{
+	font-size:25px;
+}
+.center{
+	text-align: center;
+}
+table, th, td{
+	border:1px solid white;
+}
+
+header > span{
+	font-size: 30px;
+}
+#main-photo img{
+	width:100%;
+	margin: auto;
+	text-align: center;
+}

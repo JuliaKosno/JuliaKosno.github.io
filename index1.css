@@ -19,12 +19,16 @@ body{
 	font-size:50px;
 	color:#FF3366;
 	text-align: center;
+	background: #1A2026;
 }
-
+#navbar{
+	display: block;
+	background: black;
+	margin-top: 0px;
+	padding-bottom:5px;
+}
 #navbar ul{
 	display: block;
-	margin-bottom:  40px;
-	margin-top:  40px;
     list-style-type: none;
     text-align: center;
 }
@@ -53,13 +57,15 @@ width:50%;
 padding:10px;
 font-size: 20px;
 float: left;
+
+
 }
 
 #start{
 float:right;
 width:550px;
-padding:10px;
 font-size: 20px;
+
 }
 h2{
 	font-size: 20px;
@@ -74,11 +80,15 @@ table, th, td{
 	border:1px solid white;
 }
 
-header > span{
+header > span, p > span{
 	font-size: 30px;
 }
+
 #main-photo img{
 	width:100%;
 	margin: auto;
 	text-align: center;
+	border:5px solid black;
+
 }
+

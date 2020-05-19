@@ -12,11 +12,12 @@ a:link{
 }
 
 #title{
-
+	margin-left: 10px;
 	display: block;
 	font-family:Quicksand;
 	color:#FF3366;
 	float:left;
+	margin-bottom: 15px;
 }
 #navbar{
 	display: block;
@@ -53,8 +54,10 @@ header{
 width:25%;
 padding:10px;
 background: gray;
-float:right;
-font-size: 20px;
+float:left;
+font-size: 25px;
+height:353px;
+
 }
 
 #start{
@@ -63,15 +66,14 @@ padding:10px;
 background: gray;
 float:right;
 display: block;
-clear: both;
 font-size: 20px;
+height:353px;
 }
 
 #main-photo img{
-  margin-left: auto;
-  padding-left: 20px;
   margin-right: auto;
-  width:40%;
+  width:50%;
+
 }
 
 table, th, td{
@@ -80,6 +82,7 @@ table, th, td{
 
 h1{
 	font-size: 50px;
+	margin:0px;
 }
 
 h3{

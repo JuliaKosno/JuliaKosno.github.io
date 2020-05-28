@@ -43,13 +43,16 @@ header{
 
 }
 
-#nav-list li, li a:visited {
+#nav-list li  {
 	font-family: 'Dancing Script', bold;
 	display: inline-block;
 	margin-left: 25px;
 	color:white;
 }
-
+li a:visited{
+	color:white;
+	
+}
 #nav-list li a{
 	text-decoration: none;
 	transition: all 0.3s ease 0s;

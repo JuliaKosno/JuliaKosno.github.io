@@ -9,6 +9,28 @@
  body{
  	background-color: #414042;
  }
+div#slideshow-button {
+	display: inline-block;
+	box-shadow: 0 0 5px #fff;
+	margin: 20px 0 0 25px;
+	padding: 10px 20px 10px 20px;
+	background-color: #231F20;
+	border-radius:10px;
+}
+
+div#slideshow-button:hover{
+	box-shadow: 0 0 10px #fff;
+}
+#slideshow-button a:hover{
+	color:#E85668;
+}
+
+#slideshow-button a{
+text-decoration: none;
+color:white;
+font-family: 'Dancing Script', cursive;
+
+}
 
 #gallery-page-content{ 
 

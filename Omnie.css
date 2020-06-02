@@ -1,0 +1,50 @@
+.img-box{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 1.5rem;
+	grid-template-areas: 'img-1 img-2 img-3 img-4';
+}
+.img-box a{
+	width:100%;
+	height:25rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+.img-1{
+	grid-area: img-1;
+	background-image: url("Images/dog1.jpg")
+}
+
+.img-2{
+	grid-area: img-2;
+	background-image: url("Images/dog2.jpg")
+}
+.img-3{
+	grid-area: img-3;
+	background-image: url("Images/dog3.jpg")
+}
+.img-4{
+	grid-area: img-4;
+	background-image: url("Images/dog4.jpg")
+}
+
+h1{
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+	margin-top: 30px;
+	font-size: 50px;
+}
+@media screen and (max-width: 900px)
+{
+
+	.img-box{
+		grid-template-columns: 1fr;
+		grid-template-areas: 'img-1' 'img-2' 'img-3''img-4';
+			}
+}

@@ -57,6 +57,7 @@ li a:visited{
 	text-decoration: none;
 	transition: all 0.3s ease 0s;
 	margin-right: auto;
+	color:white;
 
 }
 #nav-list li a:hover, #nav-list li a.active{

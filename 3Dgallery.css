@@ -1,0 +1,94 @@
+
+	* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  display: flexbox;
+  display: flex;
+  background: #111;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+
+#page-title a{
+  text-decoration: none;
+  color: white;
+}
+#page-title a:hover{
+  color:#E85668;
+}
+#main-container {
+  width:100%;
+}
+
+div#drag-container {
+  margin-top: 100px;
+}
+
+#drag-container, #spin-container {
+  position: relative;
+  margin: auto;
+  transform-style: preserve-3d;
+  transform: rotateX(-10deg);
+}
+
+#drag-container img {
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 200px;
+  font-size: 50px;
+  text-align: center;
+  box-shadow: 0 0 8px #fff;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+}
+
+#drag-container img:hover {
+  box-shadow: 0 0 15px white;
+  border: 1px pink;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+}
+
+
+#drag-container #gallery-name {
+  font-size: 50px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotateX(90deg);
+}
+
+
+@keyframes spin {
+  from{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  } to{
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes spinRevert {
+  from{
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  } to{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}

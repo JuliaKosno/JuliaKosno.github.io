@@ -32,24 +32,23 @@
     			</nav>
     		</header>
 <?php
-if (! empty ( $_REQUEST [" email "]) && ! empty ( $_REQUEST [" imie "
-]) && ! empty ( $_REQUEST [" nazwisko "]) && ! empty ( $_REQUEST [" wydazrzenie "])&& ! empty ( $_REQUEST [" data "])) {
-$email = $_REQUEST [" email "] ;
-$imie = $_REQUEST [" imie "] ;
-$nazwisko = $_REQUEST [" nazwisko "] ;
+if (! empty ( $_REQUEST [" email "]) && ! empty ( $_REQUEST ["imie"]) && ! empty ( $_REQUEST [" nazwisko "]) && ! empty ( $_REQUEST ["wydazrzenie"])&& ! empty ( $_REQUEST ["data"])) {
+$email = $_REQUEST ["email"] ;
+$imie = $_REQUEST ["imie"] ;
+$nazwisko = $_REQUEST ["nazwisko"] ;
 $wydarzenie = $_REQUEST ["wydarzenie"] ;
 $data = $_REQUEST ["data"] ;
 } else die (" Niepoprawnie wypełniony formularz!") ;
 
-$string = file_get_contents (" rezerwacje.json ") ;
+$string = file_get_contents ("rezerwacje.json ") ;
  if ( $string )
  $arr = json_decode ( $string , true ) or die (" Niewłaściwy plik JSON !") ;
  else
  $arr = array () ;
  array_push ( $arr , array (" imie " => $imie ," nazwisko " => $nazwisko , " email " => $email, " wydarzenie " => $wydarzenie, " data " => $data ));
  $string = json_encode ( $arr ) ;
- if( file_put_contents (" rezerwacje.json ", $string ))
- echo " Dodane !" ;
+ if( file_put_contents ("rezerwacje.json ", $string ))
+ echo "Dodane!" ;
  else
  die ("Błąd!") ;
 ?>

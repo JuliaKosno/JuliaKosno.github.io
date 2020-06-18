@@ -52,5 +52,24 @@ $string = file_get_contents (" rezerwacje.json ") ;
  else
  die ("Błąd!") ;
 ?>
+<? php
+$string = file_get_contents(" rezerwacje.json ") ; 
+if ( $string ) {
+$arr = json_decode ( $string , true ) or die (" Niewłaściwy
+plik JSON !") ;
+echo "<table >\n" ;
+echo "<tr ><th > Imię </th > <th > Nazwisko </th > <th >Email </
+th ></tr >\n" ;
+foreach ( $arr as $row ) {
+echo "<tr >\n" ;
+echo "<td > { $row [' imie ']} </td >" ;
+ echo "<td > { $row [' nazwisko ']} </td >" ;
+ echo "<td > { $row [' email ']} </td >\n" ;
+ echo " </tr >\n" ;
+ }
+ echo " </table >\n" ;
+ }
+ ?>
+
     	</body>
 </html>

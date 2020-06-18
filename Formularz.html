@@ -2,11 +2,12 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title> TEST </title>
+		<title> Rezerwacja </title>
 		<link rel="stylesheet" 
 			type="text/css"
 			href="index1.css"
 			/>
+		<link rel="stylesheet" href="css_fa/all.css">
 		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:ital@1&display=swap" rel="stylesheet">
 	</head>
 	<body style="text-align: center; background-color: #414042;">
@@ -24,46 +25,41 @@
 						<li><a  href="index.html">Home </a></li>
 						<li><a href="Omnie.html">O mnie</a></li>
 						<li><a href="Gallery.html">Galeria</a></li>
-						<li><a class="active" href="Formularz.html">Ankieta</a></li>
+						<li><a class="active" href="Formularz.html">Terminy</a></li>
 						<li><a href="Regulamin.html">Regulamin</a></li>
 					</ul>
 				</div>
 			</nav>
 		</header>
-	
-	<br>
-	<h3> TEST </h3>
-	<br>
-	<form action="mailto:i.nor.julia@gmail.com" method="post" enctype="text/plain">
-		Imię: <input type="text" name="imie"/> 
-			<br/> <br/>
-		Płeć: 
-		<input type="radio" name="Plec" value="Kobieta"> Kobieta
-		<input type="radio" name="Plec" value="Mezczyzna"> Mężczyzna
-		</select> <br/>
-		<p>Czy interesujesz się fotografią?</p>
-	<select name="zainteresowanie" >
-		<option>TAK</option>
-		<option>NIE</option>
-		<option>MOŻE</option>
-	</select>
-	<p>Jak się czujesz oglądając to video?</p><br>
-	<embed src="video.mp4"> </embed> 
-	<br>
-	<select name="odczucia" >
-		<option>dobrze</option>
-		<option>źle</option>
-		<option>może być</option>
-	</select>
-	<br>
-		<p>Jak tu trafiłeś/aś?</p>
-	<textarea 
-		name="Komentarz" cols="30" rows="5">Wpisz tekst
-	</textarea> 
-	<br/><br/><br/>
-	<input type="submit" value="Wyślij"/> <br/>	
+	</br>
+	<h3>Zarezerwuj wolny termin:</h3>
+	</br>
+	<form action="rezerwacja.php" method="get">
+		Imię:</br>
+		<input type="text" name="imie"/></br></br>
+		Nazwisko:</br>
+		<input  type="text" name="nazwisko"></br></br>
+		Twój email:</br>
+		<input  type="text" name="email">
+		</br></br>
+		Wydarzenie:</br>
+		<select name="wydarzenie">
+			<option value="plener">sesja plenerowa</option>
+			<option value="wesele">wesele</option>
+			<option value="komunia">komunia</option>
+			<option value="panienski/kawalerski">wieczór panieński/kawalerski</option>
+			<option value="urodziny">urodziny</option>
+			<option value="reportaz">reportaż</option>
+			<option value="inne">inne</option>
+		</select>
+		</br></br>
+		Data:</br>
+		<input type="date"  name="data" required>
+		</br></br>
+		<input type="submit" value="Zarezerwuj"/>
 	</form>
-	<br>
+
+	</div>
 	
 		<footer>
 				© All Rights Reserved

@@ -1,0 +1,100 @@
+@font-face
+{
+	font-family: League;
+	src:url(LeagueSpartan-Bold.otf);
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	background-color: #2F3538 ;
+	font-family: 'Open Sans', sans-serif;
+	color:white;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+li{
+	list-style: none;
+	display: inline-block;
+	padding: 10px;
+}
+
+ul#nav-list{
+	text-align: right;
+	background-color: black;
+	margin: 0 0 0 0;
+}
+/*.s1{
+	position:absolute;
+	width:100%;
+	height:94vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.s1 video{
+	width: 100%;
+	height:94vh;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+*/
+#fullpage{
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+}
+#fullpage section{
+	height: 100vh;
+	width: 100%;
+}
+#fullpage section:nth-child(1){
+	position: relative;
+	height:94vh;
+}
+#fullpage section:nth-child(2){
+	position: relative;
+}
+#fullpage section:nth-child(3){
+	position: relative;
+}
+#fullpage section:nth-child(4){
+	position: relative;
+}
+#fullpage section:nth-child(5){
+	position: relative;
+}
+#fullpage section:nth-child(6){
+	position: relative;
+}
+
+#fullpage section video{
+	width:100%;
+	height: 100vh;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+#fullpage section h1{
+	margin:0;
+	padding:0;
+	text-align: center;
+	line-height: 100vh;
+	position: absolute;
+	mix-blend-mode: screen;
+	font-family: 'League';
+	background-color: #414042;
+	opacity: 0.9;
+	font-size: 15vw;
+	color:black;
+	width:100%;
+}
